@@ -9,11 +9,17 @@ public class Main {
             case "basketball":
                 playable = new BasketBall();
                 break;
+            case "volleyball":
+                playable = new VolleyBall();
+                break;
             case "guitar":
                 playable = new Guitar();
                 break;
             case "voilin":
                 playable = new Voilin();
+                break;
+            case "flute":
+                playable = new Flute();
                 break;
         }
         play(playable);
@@ -24,6 +30,10 @@ public class Main {
         if (playable instanceof Football) {
             Football football = (Football) playable;
             football.kick();
+        }
+        if (playable instanceof VolleyBall) {
+            VolleyBall volleyball = (VolleyBall) playable;
+            volleyball.serve();
         }
     }
 }
