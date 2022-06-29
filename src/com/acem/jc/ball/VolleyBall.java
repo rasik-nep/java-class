@@ -1,9 +1,11 @@
+package com.acem.jc.ball;
+
 public class VolleyBall extends Ball {
     public void play() {
         System.out.println("playing volleyball");
     }
 
-    public void serve(){
+    public void serve() {
         System.out.println("Serving the volleyball");
     }
 }
